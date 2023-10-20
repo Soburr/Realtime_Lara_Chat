@@ -56,6 +56,69 @@
    }
    .chatlist_body {
 
+      .chatlist_item {
+        padding: 2px 8px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+
+         .chatlist_img_container {
+         height: 47px;
+         width: 47px;
+         margin: auto;
+         margin-left: auto;
+
+         img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+         }
+         }
+
+         .chatlist_info {
+            padding: 2px 5px;
+            width: 80%;
+            display: block;
+           // flex-wrap: nowrap;
+
+        .top_row {
+            margin: 3px 0px;
+            width: 100%;
+            display: flex;
+
+        .list_username {
+            font-size: 16px;
+            width: 80%;
+        }
+
+        .date {
+            font-size: 13px;
+            margin-left: auto;
+        }
+        }
+
+        .bottom_row {
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+
+        .message_body {
+            width: 80%;
+            font-weight: lighter;
+            font-family: 'Roboto';
+        }
+        .unread_count {
+            margin-left: auto;
+            font-size: 13px;
+            background-color: gainsboro;
+            padding: 3px 5px;
+            border-radius: 50%;
+            color: red;
+            font-weight: lighter;
+        }
+        }
+         }
+      }
    }
 }
 
