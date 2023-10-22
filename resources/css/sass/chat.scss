@@ -1,8 +1,40 @@
 //imports
 @import 'breakpoints';
 
+//variables
+$header_height: 60px;
+$footer_height: 60px;
+$base_color:#0182f3;
+
+.msg_body_me {
+    background-color: gray;
+    margin-left: auto;
+
+    .read {
+        // font-size: 16px;
+        color: rgb(56, 55, 55);
+    }
+}
+
+.msg_body_receiver {
+    background-color: $base_color;
+    color: #fff;
+
+    .read {
+        // font-size: 16px;
+        color: rgb(114, 112, 112);
+
+    }
+}
 
 // chat container
+img {
+    object-fit: cover;
+}
+
+body {
+    background-color: black !important;
+}
 .chat_container {
     position: fixed;
     width: 95%;
@@ -94,6 +126,7 @@
         .date {
             font-size: 13px;
             margin-left: auto;
+            margin-right: 3px;
         }
         }
 
@@ -157,11 +190,12 @@
              margin: auto 0;
              font-size: 21px;
              padding: 7px 11px;
+             cursor: pointer;
           }
 
           .name {
              margin: auto 5px;
-
+             cursor: pointer;
           }
 
           .info {
@@ -175,15 +209,50 @@
             margin: 1px 11px;
             padding: 3px 5px;
             padding: 4px 7px;
+            cursor: pointer;
+            &:hover{
+                color: lighten($color: $base_color, $amount: 18%);
+            }
             }
           }
     }
     .chatbox_body {
        position: absolute;
-       border: 1px solid blue;
        top: 60px;
        width: 100%;
        overflow-y: auto;
+       padding: 11px 11px;
+
+       .msg_body {
+        // background-color: $base_color;
+        border-radius: 9px;
+        display: block;
+        max-width: 80%;
+        margin-top: 11px;
+        padding: 4px 7px;
+
+        .msg_body_footer {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: right;
+
+        .date{
+            font-size: 13px;
+            padding-right: 7px;
+        }
+
+        .read {
+            // font-size: 16px;
+            // color: lightgray;
+
+        i {
+            font-size: 22px;
+            margin: 2px;
+        }
+        }
+        }
+       }
     }
     .chatbox_footer {
        border-top: 1px solid green;
