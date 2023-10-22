@@ -121,6 +121,7 @@
 
 .chat_box_container {
   position: relative;
+  display: block;
   width: 75%;
   height: 100%;
 }
@@ -130,6 +131,45 @@
   border-bottom: 1px solid gray;
   height: 60px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.chat_box_container .chatbox_header .img_container {
+  height: 45px;
+  width: 45px;
+  margin: auto 0;
+  margin-left: 4px;
+}
+.chat_box_container .chatbox_header .img_container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.chat_box_container .chatbox_header .return {
+  margin: auto 0;
+  font-size: 21px;
+  padding: 7px 11px;
+}
+.chat_box_container .chatbox_header .name {
+  margin: auto 5px;
+}
+.chat_box_container .chatbox_header .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 3px 5px;
+  margin: auto 0 auto auto;
+  font-size: 19px;
+}
+.chat_box_container .chatbox_header .info .info_item {
+  margin: 1px 11px;
+  padding: 3px 5px;
+  padding: 4px 7px;
 }
 .chat_box_container .chatbox_body {
   position: absolute;
