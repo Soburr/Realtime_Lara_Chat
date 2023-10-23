@@ -72,9 +72,47 @@
                 </div>
             </div>
 
+            <div class="msg_body msg_body_me">
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eveniet consectetur illum illo.
+                Repellat numquam sed veniam perferendis dolorem est error exercitationem? Nobis eos illum architecto
+                minima vero quae? Ratione?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptatum repudiandae soluta quo
+                consectetur corporis delectus, nobis tempore similique aspernatur reprehenderit adipisci itaque qui
+                voluptate illum pariatur nihil, dolorum vel?
+
+                <div class="msg_body_footer">
+                    <div class="date">
+                        5 hours ago
+                    </div>
+
+                    <div class="read">
+                        <i class="bi bi-check"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg_body msg_body_me">
+
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eveniet consectetur illum illo.
+                Repellat numquam sed veniam perferendis dolorem est error exercitationem? Nobis eos illum architecto
+                minima vero quae? Ratione?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut voluptatum repudiandae soluta quo
+                consectetur corporis delectus, nobis tempore similique aspernatur reprehenderit adipisci itaque qui
+                voluptate illum pariatur nihil, dolorum vel?
+
+                <div class="msg_body_footer">
+                    <div class="date">
+                        5 hours ago
+                    </div>
+
+                    <div class="read">
+                        <i class="bi bi-check"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="chatbox_footer">
-            chat footer
-        </div>
+
     </h2>
 </div>
