@@ -14,27 +14,30 @@ class CreateChat extends Component
 
     public function checkconversation($receiverId) {
 
-        //  dd($receiverId);
-
          $checkedConversation = Conversation::where('receiver_id', auth()->user()->id)
                                ->where('sender_id', $receiverId)->orWhere('receiver_id', $receiverId)
                                ->where('sender_id', auth()->user()->id)->get();
 
-        if (count($checkedConversation)==0) {
-            //  dd('NO Conversation');
+        if (count($checkedConversation) == 0) {
 
-             $createdConversation = Conversation::create(['receiver_id'=>$receiverId, 'sender_id' => auth()->user()->id, 'last_time_message'=>0]);
-             //Conversation Created
+             $createdConversation = Conversation::create(['receiver_id'=>$receiverId, 'sender_id' => auth()->user()->id, 'last_time_message'=> now()]);
+               // Conversation created
 
-             $createdMessage = Message::create(['conversation_id'=>$checkedConversation->id, 'sender_id' => auth()->user()->id, 'receiver_id' => $receiverId, 'body'=>$this->message]);
+             $createdMessage = Message::create([
+                'conversation_id'=>$createdConversation->id,
+                'sender_id' => auth()->user()->id,
+                'receiver_id' => $receiverId,
+                'body'=>$this->message
+            ]);
 
              $createdConversation->last_time_message = $createdMessage->created_at;
              $createdConversation->save();
 
+             dd($createdMessage);
              dd('saved');
         }
 
-        elseif (count($checkedConversation) >=1) {
+        elseif (count($checkedConversation) >= 1) {
              dd('Conversation exists');
         }
 
