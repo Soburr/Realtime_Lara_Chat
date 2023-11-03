@@ -15,7 +15,7 @@
 
             @if (count($conversations) > 0)
             @foreach ($conversations as $conversation)
-            <div class="chatlist_item">
+            <div class="chatlist_item" wire:click="$emit('chatUserSelected', {{ $conversation }}, {{ $this->getChatUserInstance($conversation, $name='id') }})">
                 <div class="chatlist_img_container">
                     <img src="https://picsum.photos/{{ $this->getChatUserInstance($conversation, $name='id') }}/190/200/390" alt="">
                 </div>
