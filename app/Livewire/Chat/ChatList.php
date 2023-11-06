@@ -13,7 +13,7 @@ class ChatList extends Component
     public $receiverInstance;
     public $name;
     public $selectedConversation;
-    protected $listeners = ['/chatUserSelected'];
+    protected $listeners = ['chatUserSelected'];
 
     public function chatUserSelected(Conversation $conversation, $receiverId) {
 
