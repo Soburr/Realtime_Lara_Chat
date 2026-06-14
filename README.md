@@ -15,16 +15,6 @@ A modern, open-source real-time chat application built with **Laravel** and **Li
 - ⚙️ Built with Laravel & Livewire
 - 🛡️ CSRF protection and secure session handling
 
-## 📸 Screenshots
-
-Add screenshots of your application here.
-
-```text
-screenshots/
-├── chat-dashboard.png
-├── conversation-view.png
-└── mobile-view.png
-```
 
 ## 🛠️ Tech Stack
 
@@ -33,25 +23,25 @@ screenshots/
 - **Database:** MySQL
 - **Authentication:** Laravel Authentication
 - **Real-Time Updates:** Livewire Polling / Broadcasting
-- **Styling:** Tailwind CSS / Bootstrap (Update accordingly)
+- **Styling:** Tailwind CSS 
 
 ## 📋 Requirements
 
 Before installation, ensure you have:
 
-- PHP >= 8.1
+- PHP >= 7.1
 - Composer
 - MySQL
-- Node.js & NPM
-- Laravel CLI (optional)
+- NPM
+
 
 ## ⚙️ Installation
 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/realtime-chat-app.git
-cd realtime-chat-app
+git clone https://github.com/yourusername/realtime_lara_chat.git
+cd realtime_lara_chat
 ```
 
 ### 2. Install Dependencies
@@ -189,15 +179,12 @@ git push origin feature/new-feature
 
 If you find a bug or have a feature request, please open an issue in the repository.
 
-## 📄 License
-
-This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-Developed by **[Your Name]**
+Developed by **[Soburr]**
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/Soburr
 
 ---
 
